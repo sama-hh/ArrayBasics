@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int[] numbers2 = {11, 14, 15, 16, 17, 18, 19, 20};
+        int[] numbers2 = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
         task1(numbers);
         task2(numbers);
         task3(numbers);
@@ -43,14 +43,14 @@ public class Main {
     }
 
     public static void task5(int[] numbers, int[]numbers2) {
-//        int minLength = Math.min(numbers.length, numbers2.length);
-//        int[] sumArray = new int[minLength];
-//
-//        for (int i = 0; i < numbers.length; i++) {
-//            sumArray[i] = numbers[i] + numbers2[i];
-//        }
-//
-//        System.out.println("Task 5");
-//        System.out.println(Arrays.toString(sumArray));
+        int minLength = Math.min(numbers.length, numbers2.length);
+        int[] sumArray = new int[minLength];
+
+        for (int i = 0; i < minLength; i++) {
+            sumArray[i] = numbers[i] + numbers2[i];
+        }
+
+        System.out.println("Task 5");
+        System.out.println(Arrays.toString(sumArray));
     }
 }
