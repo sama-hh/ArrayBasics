@@ -1,9 +1,6 @@
 import java.util.Arrays;
 
-//Step 3: Find the largest number in the array and print it to the console.
-//
-//Step 4: Create a second array with numbers from 11 to 20.
-//
+
 //Step 5: Perform element-wise addition of both arrays and store the result in a third array. Print the result array to the console.
 //
 //Please post the link to your GitHub repository here, where you have solved this task together.
@@ -11,8 +8,11 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] numbers2 = {11, 14, 15, 16, 17, 18, 19, 20};
         task1(numbers);
         task2(numbers);
+        task3(numbers);
+        task5(numbers, numbers2);
     }
 
     //Step 1: Create an array with numbers from 1 to 10 and print it to the console.
@@ -40,5 +40,17 @@ public class Main {
             }
         }
         System.out.println(largestNumber);
+    }
+
+    public static void task5(int[] numbers, int[]numbers2) {
+//        int minLength = Math.min(numbers.length, numbers2.length);
+//        int[] sumArray = new int[minLength];
+//
+//        for (int i = 0; i < numbers.length; i++) {
+//            sumArray[i] = numbers[i] + numbers2[i];
+//        }
+//
+//        System.out.println("Task 5");
+//        System.out.println(Arrays.toString(sumArray));
     }
 }
