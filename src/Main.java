@@ -30,4 +30,15 @@ public class Main {
         }
         System.out.println(acc);
     }
+
+    public static void task3(int[] numbers){
+        System.out.println("Task 3");
+        int largestNumber = numbers[0];
+        for (int element : numbers) {
+            if (element > largestNumber) {
+                largestNumber = element;
+            }
+        }
+        System.out.println(largestNumber);
+    }
 }
